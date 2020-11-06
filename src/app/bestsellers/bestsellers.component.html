@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <h1><b>Best Sellers</b></h1>
+    <small>A perfect way to send love</small>
+    <div class="row">
+        <div *ngFor="let bestseller of bestsellerslist" class="cardtop">
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/snowlicious-bday-cake-9936880ca-A.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">{{bestseller.name}}</h5>
+                  <p class="card-text"><b>Rs. {{bestseller.cost}}</b></p>
+                    <p><small>Earliest delivery : {{bestseller.estimateddelivery}}</small></p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
